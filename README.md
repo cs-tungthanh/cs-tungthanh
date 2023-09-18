@@ -1,8 +1,8 @@
 
 <!-- Wellcome -->
-<h3 align="center">
+<p align="center">
   <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&width=435&lines=Hi%2C+My+name+is+Tung+Thanh" alt="Typing SVG" /></a>
-</h3>
+</p>
 &nbsp;
 
 <!-- Profile -->
@@ -18,7 +18,7 @@
     </a>
     <!-- Golang -->
     <a style="text-decoration:none" href="https://github.com/cs-tungthanh?tab=repositories" target="_blank">
-        <img src="https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white">
+        <img src="https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white">
     </a>
     <!-- Python -->
     <a style="text-decoration:none" href="https://github.com/cs-tungthanh?tab=repositories" target="_blank">
