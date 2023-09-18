@@ -28,5 +28,13 @@
     <a style="text-decoration:none" href="https://github.com/cs-tungthanh?tab=repositories" target="_blank">
         <img src="https://img.shields.io/badge/Node.js-43853D?style=flat-square&logo=node.js&logoColor=white">
     </a>
+
+    <!-- Languages -->
 </p>
 &nbsp;
+
+<h2 align="center"><samp>Most used languages</samp></h2>
+<img align="center" src="metrics.languages.svg" alt="Used languages" width="100%">
+
+<!-- Footer -->
+<h3 align="center"><samp>Last edit ❤️ - 2024.</samp></h3>
