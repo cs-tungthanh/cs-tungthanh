@@ -10,9 +10,9 @@
         <br>
         「 Solve, Build, Code - Solution Architect</b> 」
     </samp>
-    
-    <br>
-    
+</p>
+
+<p align="center">
     <!-- Typescript -->
     <a style="text-decoration:none" href="https://github.com/cs-tungthanh?tab=repositories" target="_blank">
         <img src="https://img.shields.io/badge/TypeScript-007ACC?style=flat-square&logo=Typescript&logoColor=white">
