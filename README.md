@@ -21,13 +21,13 @@
     <a style="text-decoration:none" href="https://github.com/cs-tungthanh?tab=repositories" target="_blank">
         <img src="https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white">
     </a>
-    <!-- Python -->
-    <a style="text-decoration:none" href="https://github.com/cs-tungthanh?tab=repositories" target="_blank">
-        <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=Python&logoColor=white">
-    </a>
     <!-- Nodejs -->
     <a style="text-decoration:none" href="https://github.com/cs-tungthanh?tab=repositories" target="_blank">
         <img src="https://img.shields.io/badge/Node.js-43853D?style=flat-square&logo=node.js&logoColor=white">
+    </a>
+    <!-- Python -->
+    <a style="text-decoration:none" href="https://github.com/cs-tungthanh?tab=repositories" target="_blank">
+        <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=Python&logoColor=white">
     </a>
 </p>
 
