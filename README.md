@@ -2,13 +2,17 @@
     <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&width=435&lines=Hi%2C+My+name+is+Tung+Thanh" alt="Typing SVG" />
 </p>
 
-&nbsp;
-
 <p align="center">
     <samp>
-        I'm a software developer from <b>Vietnam</b>
+        👋 I'm a software developer from <b>Vietnam</b>.
         <br>
         「 Solve, Build, Code - Solution Architect</b> 」
+        <br>
+        📚 Lifelong learner with a focus on continuous improvement.
+        <br>
+        🚀 Passionate about exploring new technologies and solving complex problems.
+        <br>
+        📧 Contact me at: <a href="mailto:cs.tungthanh@gmail.com">cs.tungthanh@gmail.com</a>
     </samp>
 </p>
 
@@ -30,8 +34,6 @@
         <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=Python&logoColor=white">
     </a>
 </p>
-
-&nbsp;
 
 <!-- Footer -->
 <h3 align="center"><samp>Last edit ❤️ 2024.</samp></h3>
