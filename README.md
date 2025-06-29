@@ -1,12 +1,12 @@
-<p align="center">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&width=435&lines=Hi%2C+My+name+is+Tung+Thanh" alt="Typing SVG" />
-</p>
+<div align="center" style="margin-left: 120px;">
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&width=435&lines=Hi%2C+My+name+is+Tung+Thanh" alt="welcome" />
+</div>
 
-<p align="center">
+<div align="center">
     <samp>
-        👋 I'm a software developer from <b>Vietnam</b>.
+        👋 I'm a software engineer from <b>Vietnam</b>.
         <br>
-        「 Solve, Build, Code - Solution Architect</b> 」
+        「 Solve, Build, Code - Solution Architect 」
         <br>
         📚 Lifelong learner with a focus on continuous improvement.
         <br>
@@ -14,26 +14,31 @@
         <br>
         📧 Contact me at: <a href="mailto:cs.tungthanh@gmail.com">cs.tungthanh@gmail.com</a>
     </samp>
-</p>
+</div>
 
-<p align="center">
+<div align="center">
     <!-- Typescript -->
-    <a style="text-decoration:none" href="https://github.com/cs-tungthanh?tab=repositories" target="_blank">
-        <img src="https://img.shields.io/badge/TypeScript-007ACC?style=flat-square&logo=Typescript&logoColor=white">
+    <a href="https://github.com/cs-tungthanh?tab=repositories" target="_blank">
+        <img src="https://img.shields.io/badge/TypeScript-007ACC?style=flat-square&logo=Typescript&logoColor=white" alt="TypeScript">
     </a>
     <!-- Golang -->
-    <a style="text-decoration:none" href="https://github.com/cs-tungthanh?tab=repositories" target="_blank">
-        <img src="https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white">
+    <a href="https://github.com/cs-tungthanh?tab=repositories" target="_blank">
+        <img src="https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white" alt="Go">
     </a>
     <!-- Nodejs -->
-    <a style="text-decoration:none" href="https://github.com/cs-tungthanh?tab=repositories" target="_blank">
-        <img src="https://img.shields.io/badge/Node.js-43853D?style=flat-square&logo=node.js&logoColor=white">
+    <a href="https://github.com/cs-tungthanh?tab=repositories" target="_blank">
+        <img src="https://img.shields.io/badge/Node.js-43853D?style=flat-square&logo=node.js&logoColor=white" alt="Node.js">
     </a>
     <!-- Python -->
-    <a style="text-decoration:none" href="https://github.com/cs-tungthanh?tab=repositories" target="_blank">
-        <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=Python&logoColor=white">
+    <a href="https://github.com/cs-tungthanh?tab=repositories" target="_blank">
+        <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=Python&logoColor=white" alt="Python">
     </a>
-</p>
+    <!-- AWS -->
+    <a href="https://github.com/cs-tungthanh?tab=repositories" target="_blank">
+        <img src="https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazon-aws&logoColor=white" alt="AWS">
+    </a>
+</div>
 
-<!-- Footer -->
-<h3 align="center"><samp>Last edit ❤️ 2024.</samp></h3>
+<div align="center">
+    <samp>Last edit ❤️ 2025.</samp>
+</div>
