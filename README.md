@@ -28,31 +28,6 @@
     </picture>
 </div>
 
-<!-- ─────────────────────────  GITHUB STATS  ─────────────────────── -->
-<div align="center">
-    <h3>📊 GitHub Stats</h3>
-    <picture>
-        <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=cs-tungthanh&show_icons=true&hide_border=true&count_private=true&include_all_commits=true&theme=github_dark" />
-        <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api?username=cs-tungthanh&show_icons=true&hide_border=true&count_private=true&include_all_commits=true&theme=default" />
-        <img height="165" src="https://github-readme-stats.vercel.app/api?username=cs-tungthanh&show_icons=true&hide_border=true&count_private=true&include_all_commits=true" alt="github stats" />
-    </picture>
-    <picture>
-        <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=cs-tungthanh&layout=compact&hide_border=true&langs_count=8&theme=github_dark" />
-        <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=cs-tungthanh&layout=compact&hide_border=true&langs_count=8&theme=default" />
-        <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=cs-tungthanh&layout=compact&hide_border=true&langs_count=8" alt="top languages" />
-    </picture>
-</div>
-
-<!-- ─────────────────────────  TROPHIES  ─────────────────────────── -->
-<div align="center">
-    <h3>🏆 Trophies</h3>
-    <picture>
-        <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-trophy.vercel.app/?username=cs-tungthanh&no-bg=true&no-frame=true&margin-w=4&column=7&theme=darkhub" />
-        <source media="(prefers-color-scheme: light)" srcset="https://github-profile-trophy.vercel.app/?username=cs-tungthanh&no-bg=true&no-frame=true&margin-w=4&column=7&theme=flat" />
-        <img src="https://github-profile-trophy.vercel.app/?username=cs-tungthanh&no-bg=true&no-frame=true&margin-w=4&column=7" alt="trophies" />
-    </picture>
-</div>
-
 <!-- ─────────────────────────  LANGUAGE BADGES  ──────────────────── -->
 <div align="center">
     <!-- Typescript -->
