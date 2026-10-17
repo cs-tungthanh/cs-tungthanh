@@ -1,57 +1,54 @@
-<div align="center" style="margin-left: 120px;">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&width=435&lines=Hi%2C+My+name+is+Tung+Thanh" alt="welcome" />
-</div>
+<!-- ─────────────────────────  BANNER  ───────────────────────────── -->
+<picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/banner-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="./assets/banner-light.svg" />
+    <img src="./assets/banner-light.svg" width="100%" alt="Tung Thanh — Software Engineer · Solution Architect" />
+</picture>
 
-<div align="center">
-    <samp>
-        👋 I'm a software engineer &amp; solution architect from <b>Vietnam</b>.
-        <br>
-        「 Solve · Build · Ship 」
-        <br>
-        🛠️ I design and build scalable backend systems with Go, Node.js &amp; TypeScript on AWS.
-        <br>
-        📚 Lifelong learner — always sharpening my craft and exploring what's next.
-        <br>
-        🚀 Happiest when turning complex problems into clean, reliable solutions.
-        <br>
-        📧 Reach me at <a href="mailto:cs.tungthanh@gmail.com">cs.tungthanh@gmail.com</a>
-    </samp>
-</div>
+<p align="center">
+    <a href="mailto:cs.tungthanh@gmail.com"><img src="https://img.shields.io/badge/Email-cs.tungthanh%40gmail.com-0f766e?style=flat-square&logo=gmail&logoColor=white" alt="Email" /></a>
+    <img src="https://img.shields.io/badge/Based_in-Vietnam-0f766e?style=flat-square&logo=googlemaps&logoColor=white" alt="Based in Vietnam" />
+    <a href="https://github.com/cs-tungthanh?tab=repositories"><img src="https://img.shields.io/badge/Repositories-browse-0f766e?style=flat-square&logo=github&logoColor=white" alt="Repositories" /></a>
+</p>
 
-<!-- ─────────────────────────  TECH STACK  ───────────────────────── -->
-<div align="center">
-    <h3>🧰 Tech Stack</h3>
-    <picture>
-        <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=ts,go,nodejs,python,aws,docker,postgres,redis&theme=dark" />
-        <source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=ts,go,nodejs,python,aws,docker,postgres,redis&theme=light" />
-        <img src="https://skillicons.dev/icons?i=ts,go,nodejs,python,aws,docker,postgres,redis" alt="tech stack" />
-    </picture>
-</div>
+### 👋 About me
 
-<!-- ─────────────────────────  LANGUAGE BADGES  ──────────────────── -->
-<div align="center">
-    <!-- Typescript -->
-    <a href="https://github.com/cs-tungthanh?tab=repositories" target="_blank">
-        <img src="https://img.shields.io/badge/TypeScript-007ACC?style=flat-square&logo=Typescript&logoColor=white" alt="TypeScript">
-    </a>
-    <!-- Golang -->
-    <a href="https://github.com/cs-tungthanh?tab=repositories" target="_blank">
-        <img src="https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white" alt="Go">
-    </a>
-    <!-- Nodejs -->
-    <a href="https://github.com/cs-tungthanh?tab=repositories" target="_blank">
-        <img src="https://img.shields.io/badge/Node.js-43853D?style=flat-square&logo=node.js&logoColor=white" alt="Node.js">
-    </a>
-    <!-- Python -->
-    <a href="https://github.com/cs-tungthanh?tab=repositories" target="_blank">
-        <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=Python&logoColor=white" alt="Python">
-    </a>
-    <!-- AWS -->
-    <a href="https://github.com/cs-tungthanh?tab=repositories" target="_blank">
-        <img src="https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazon-aws&logoColor=white" alt="AWS">
-    </a>
-</div>
+```go
+type Engineer struct {
+    Name     string
+    Role     []string
+    Location string
+    Focus    []string
+    Motto    string
+}
 
-<div align="center">
-    <samp>Last edit ❤️ 2026.</samp>
-</div>
+var me = Engineer{
+    Name:     "Tung Thanh",
+    Role:     []string{"Software Engineer", "Solution Architect"},
+    Location: "Vietnam 🇻🇳",
+    Focus:    []string{"scalable backend systems", "cloud architecture on AWS"},
+    Motto:    "Solve · Build · Ship",
+}
+```
+
+- 🛠️ I design and build **scalable backend systems** with Go, Node.js & TypeScript on AWS.
+- 🚀 Happiest when turning **complex problems** into clean, reliable solutions.
+- 📚 Lifelong learner, always sharpening my craft and exploring what's next.
+
+### 🧰 Tech stack
+
+| Area | Tools |
+| :-- | :-- |
+| **Languages** | <img src="https://skillicons.dev/icons?i=go,ts,nodejs,python&perline=8" height="40" alt="Go, TypeScript, Node.js, Python" /> |
+| **Cloud & infra** | <img src="https://skillicons.dev/icons?i=aws,docker&perline=8" height="40" alt="AWS, Docker" /> |
+| **Data** | <img src="https://skillicons.dev/icons?i=postgres,redis&perline=8" height="40" alt="PostgreSQL, Redis" /> |
+
+### 🐍 Contributions
+
+<picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/cs-tungthanh/cs-tungthanh/output/snake-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/cs-tungthanh/cs-tungthanh/output/snake-light.svg" />
+    <img src="https://raw.githubusercontent.com/cs-tungthanh/cs-tungthanh/output/snake-light.svg" width="100%" alt="contribution snake" />
+</picture>
+
+<p align="center"><samp>Last edit ❤️ 2026</samp></p>
