@@ -22,6 +22,8 @@ NODES = [
     ("node", "node-service", 1020, 206),
 ]
 STORES = [("postgres", 1020, 274), ("redis", 1100, 274)]
+# Used by both services, so it sits between them: (label, x, y)
+SHARED_STORE = ("dynamodb", 1044, 147)
 
 
 def node(label, x, y, c):
@@ -69,6 +71,16 @@ def svg(c):
     )
     store_edge = f'<path d="M{nd[2] + W / 2},{nd[3] + H} L{nd[2] + W / 2},{STORES[0][2]}" {edge} stroke-dasharray="3 4"/>'
 
+    # The shared store, joined to both services
+    s_lbl, s_x, s_y = SHARED_STORE
+    s_cx = s_x + 36
+    shared_store = (
+        f'<path d="M{s_cx},{go[3] + H} L{s_cx},{s_y}" {edge} stroke-dasharray="3 4"/>'
+        f'<path d="M{s_cx},{s_y + 26} L{s_cx},{nd[3]}" {edge} stroke-dasharray="3 4"/>'
+        f'<rect x="{s_x}" y="{s_y}" width="72" height="26" rx="13" fill="{c["bg"]}" stroke="{c["nodeStroke"]}"/>'
+        f'<text x="{s_cx}" y="{s_y + 17}" text-anchor="middle" font-family="{MONO}" font-size="11" fill="{c["muted"]}">{s_lbl}</text>'
+    )
+
     return f'''<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-label="Tung Thanh — Software Engineer and Solution Architect">
   <defs>
     <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
@@ -106,6 +118,7 @@ def svg(c):
   {packet(full_nd, c["accent2"], "1.3s")}
   {"".join(node(l, x, y, c) for _, l, x, y in NODES)}
   {stores}
+  {shared_store}
 </svg>
 '''
 
