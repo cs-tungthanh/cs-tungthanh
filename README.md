@@ -1,8 +1,8 @@
 <!-- ─────────────────────────  BANNER  ───────────────────────────── -->
 <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./assets/banner-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="./assets/banner-light.svg" />
-    <img src="./assets/banner-light.svg" width="100%" alt="Tung Thanh — Software Engineer · Solution Architect" />
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/banner-dark.svg?v=3" />
+    <source media="(prefers-color-scheme: light)" srcset="./assets/banner-light.svg?v=3" />
+    <img src="./assets/banner-light.svg?v=3" width="100%" alt="Tung Thanh — Software Engineer · Solution Architect" />
 </picture>
 
 <p align="center">

@@ -16,14 +16,27 @@ SANS = "-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, A
 # Architecture diagram nodes: (id, label, x, y)
 W, H = 120, 44
 NODES = [
-    ("client", "client", 690, 138),
-    ("gw", "api-gateway", 850, 138),
-    ("go", "go-service", 1020, 70),
-    ("node", "node-service", 1020, 206),
+    ("client", "client", 596, 138),
+    ("gw", "api-gateway", 752, 138),
+    ("go", "go-service", 912, 70),
+    ("node", "node-service", 912, 206),
 ]
-STORES = [("postgres", 1020, 274), ("redis", 1100, 274)]
-# Used by both services, so it sits between them: (label, x, y)
-SHARED_STORE = ("dynamodb", 1044, 147)
+# Data stores, in one column right of the services: (id, label, y of the pill's middle)
+SW, SH = 76, 26
+STORE_X = 1104
+STORES = [
+    ("postgres", "postgres", 92),
+    ("dynamodb", "dynamodb", 160),
+    ("redis", "redis", 228),
+]
+# Which service talks to which store, as on the website's diagram
+STORE_EDGES = [
+    ("go", "postgres"),
+    ("go", "dynamodb"),
+    ("node", "dynamodb"),
+    ("node", "postgres"),
+    ("node", "redis"),
+]
 
 
 def node(label, x, y, c):
@@ -64,21 +77,24 @@ def svg(c):
     full_go = p_ab + " " + p_go.replace("M", "L", 1)
     full_nd = p_ab + " " + p_nd.replace("M", "L", 1)
 
-    stores = "".join(
-        f'<rect x="{x}" y="{y}" width="72" height="26" rx="13" fill="none" stroke="{c["nodeStroke"]}"/>'
-        f'<text x="{x + 36}" y="{y + 17}" text-anchor="middle" font-family="{MONO}" font-size="11" fill="{c["muted"]}">{lbl}</text>'
-        for lbl, x, y in STORES
-    )
-    store_edge = f'<path d="M{nd[2] + W / 2},{nd[3] + H} L{nd[2] + W / 2},{STORES[0][2]}" {edge} stroke-dasharray="3 4"/>'
+    services = {"go": go, "node": nd}
+    store_y = {sid: y for sid, _, y in STORES}
 
-    # The shared store, joined to both services
-    s_lbl, s_x, s_y = SHARED_STORE
-    s_cx = s_x + 36
-    shared_store = (
-        f'<path d="M{s_cx},{go[3] + H} L{s_cx},{s_y}" {edge} stroke-dasharray="3 4"/>'
-        f'<path d="M{s_cx},{s_y + 26} L{s_cx},{nd[3]}" {edge} stroke-dasharray="3 4"/>'
-        f'<rect x="{s_x}" y="{s_y}" width="72" height="26" rx="13" fill="{c["bg"]}" stroke="{c["nodeStroke"]}"/>'
-        f'<text x="{s_cx}" y="{s_y + 17}" text-anchor="middle" font-family="{MONO}" font-size="11" fill="{c["muted"]}">{s_lbl}</text>'
+    def store_path(service, store):
+        x1, y1 = mid_r(services[service])
+        x2, y2 = STORE_X, store_y[store]
+        if y1 == y2:
+            return f"M{x1},{y1} L{x2},{y2}"
+        mx = (x1 + x2) / 2
+        return f"M{x1},{y1} C{mx},{y1} {mx},{y2} {x2},{y2}"
+
+    store_edges = "".join(
+        f'<path d="{store_path(svc, st)}" {edge} stroke-dasharray="3 4"/>' for svc, st in STORE_EDGES
+    )
+    stores = "".join(
+        f'<rect x="{STORE_X}" y="{y - SH / 2}" width="{SW}" height="{SH}" rx="13" fill="{c["bg"]}" stroke="{c["nodeStroke"]}"/>'
+        f'<text x="{STORE_X + SW / 2}" y="{y + 4}" text-anchor="middle" font-family="{MONO}" font-size="11" fill="{c["muted"]}">{lbl}</text>'
+        for _, lbl, y in STORES
     )
 
     return f'''<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-label="Tung Thanh — Software Engineer and Solution Architect">
@@ -113,12 +129,11 @@ def svg(c):
   <path d="{p_ab}" {edge}/>
   <path d="{p_go}" {edge}/>
   <path d="{p_nd}" {edge}/>
-  {store_edge}
+  {store_edges}
   {packet(full_go, c["accent"], "0s")}
   {packet(full_nd, c["accent2"], "1.3s")}
   {"".join(node(l, x, y, c) for _, l, x, y in NODES)}
   {stores}
-  {shared_store}
 </svg>
 '''
 
