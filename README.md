@@ -41,7 +41,7 @@ var me = Engineer{
 | :-- | :-- |
 | **Languages** | <img src="https://skillicons.dev/icons?i=go,ts,nodejs,python&perline=8" height="40" alt="Go, TypeScript, Node.js, Python" /> |
 | **Cloud & infra** | <img src="https://skillicons.dev/icons?i=aws,docker&perline=8" height="40" alt="AWS, Docker" /> |
-| **Data** | <img src="https://skillicons.dev/icons?i=postgres,redis&perline=8" height="40" alt="PostgreSQL, Redis" /> |
+| **Data** | <img src="https://skillicons.dev/icons?i=postgres,redis,dynamodb&perline=8" height="40" alt="PostgreSQL, Redis, DynamoDB" /> |
 
 ### 🐍 Contributions
 
